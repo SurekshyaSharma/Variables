@@ -79,7 +79,7 @@ def hexagon():
   s_turtle.forward(100)
   s_turtle.right(100)
   s_turtle.forward(100)
-
+# pinwheel
 hexagon()
 hexagon()
 hexagon()
