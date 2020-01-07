@@ -1,10 +1,4 @@
 import turtle
-a = 5
-print(a)
-
-b = "hello"
-print(b)
-
 #square
 s_turtle = turtle.Turtle()
 
@@ -17,33 +11,51 @@ def square():
   s_turtle.right(90)
   s_turtle.forward(100)
 
-#1stSquare
-square()
-s_turtle.right(90)
-s_turtle.forward(100)
-square()
-s_turtle.forward(100)
- #2nd square
-square()
-square() 
-#3rd
-s_turtle.right(180)
-s_turtle.forward(200)
-square()
-square()
-#4th
-s_turtle.right(180)
-s_turtle.forward(200)
-square()
-square()
-# filling the block
-square()
-square()
-s_turtle.right(180)
-s_turtle.forward(200)
-square()
-square()
-s_turtle.right(180)
-s_turtle.forward(200)
-square()
-square()
+# #1stSquare
+# square()
+# s_turtle.right(90)
+# s_turtle.forward(100)
+# square()
+# s_turtle.forward(100)
+#  #2nd square
+# square()
+# square() 
+# #3rd
+# s_turtle.right(180)
+# s_turtle.forward(200)
+# square()
+# square()
+# #4th
+# s_turtle.right(180)
+# s_turtle.forward(200)
+# square()
+# square()
+# # filling the block
+# square()
+# square()
+# s_turtle.right(180)
+# s_turtle.forward(200)
+# square()
+# square()
+# s_turtle.right(180)
+# s_turtle.forward(200)
+# square()
+# square()
+print ("-" * 25)
+print(3>2)
+print ("-" * 25)
+a_value = 3
+b_value = 4
+if a_value > b_value:
+  square()
+else:
+  print("Hello")
+print ("-" * 25)
+numbers = [1,2,2,3,4,5,6,7,8]
+for x in numbers:
+  print(x)
+  if x == 4:
+    break
+  square()
+  s_turtle.right(180)
+  s_turtle.forward(100)
