@@ -1,6 +1,7 @@
 import turtle
 #square
 s_turtle = turtle.Turtle()
+s_turtle.speed(10)
 
 def square():
   s_turtle.forward(100)
