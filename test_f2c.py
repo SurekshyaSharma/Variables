@@ -22,8 +22,8 @@ def test_1():
     assert -17.22 == ftoc.f2c(1.0)
 
 
-def test_minus_1():#
-    assert -18.33 == ftoc.f2c(-1.0) #
+def test_minus_1():
+    assert -18.33 == ftoc.f2c(-1.0)
 
 
 def test_0():
