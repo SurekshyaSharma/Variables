@@ -1,5 +1,3 @@
-
-
 def f2c(fahr):
 
     Celsius = (fahr - 32) * 5 / 9
@@ -11,8 +9,7 @@ def f2c(fahr):
 
 def main():
     value = float(input("Enter the  temperature in degree F: "))
-    print(value,"degree F is",f2c(value),"degree C")
+    print(value, "degree F is",f2c(value),"degree C")
 
 
-# main()
-
+main()
