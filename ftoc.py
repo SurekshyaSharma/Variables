@@ -11,8 +11,7 @@ def f2c(fahr):
 
 def main():
     value = float(input("Enter the  temperature in degree F: "))
-    print(value)
-    print(f2c(value))
+    print(value,"degree F is",f2c(value),"degree C")
 
 
 # main()
