@@ -14,15 +14,33 @@
 
 
 def julian(day, month, year):
-    if month == 1:
+    if year % 4 == 0 or year % 400 == 0:
+        print("It's a leap year")
+        daynum = 31 * (month - 1) + day +1
+        if month == 1 and day < 32 :
+            daynum = 31 * (month - 1) + day
+
+        elif month == 1:
+            daynum = 31 * (month - 1) + day
+
+        elif month == 2 and day < 29:
+            daynum = 31 * (month - 1) + day
+
+        elif month >= 2:
+            daynum = daynum-(4 * month + 23) // 10
+    else:
         daynum = 31 * (month - 1) + day
+        if month == 1 and day < 32:
+            daynum = 31 * (month - 1) + day
 
-    if month > 2:
-        daynum = - (4 * month + 23) // 10
+        elif month == 1:
+            daynum = 31 * (month - 1) + day
 
-    if (year % 4 == 0 or year % 400 == 0) and (month >= 2 and day > 29):
-        print("It's leap year")
-        daynum = - (4 * month + 23) // 10 + 1
+        elif month == 2 and day < 29:
+            daynum = 31 * (month - 1) + day
+
+        elif month >= 2:
+            daynum = daynum - (4 * month + 23) // 10
 
     return daynum
 
