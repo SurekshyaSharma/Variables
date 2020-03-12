@@ -1,0 +1,43 @@
+MI_per_KM = 0.6213712
+
+def km_to_miles(km):
+    result = km * MI_per_KM
+    # return round(result,2)
+    return result
+    # return km * MI_per_KM
+
+
+# def test_1_mile():
+#     assert 0.62 == km_to_miles(1.0)
+
+
+def test_1_mile():
+    assert 0.6213712 == km_to_miles(1.0)
+
+
+def test__billion_km():
+    assert 621371200.0 == km_to_miles(1000000000.0)
+
+
+def test__trillion_km():
+    assert 621371200.0 == km_to_miles(1000000000.0)
+
+
+def test__1_million_km():
+    assert 621371.2 == km_to_miles(1000000.0)
+
+
+def test__one_hundred_thousand_km():
+    assert 62137.12 == km_to_miles(100000.0)
+
+
+def test__one_thousand_km():
+    assert 6213.712 == km_to_miles(1000.0)
+
+
+def test__thousand():
+    assert 6213712.0== km_to_miles(-10000000.0)
+
+
+def test__minus_ten_thousand():
+    assert 1609344.0 == km_to_miles(1000000.0)
