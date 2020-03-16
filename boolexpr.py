@@ -8,11 +8,19 @@
 # returned value. No "chatterbox functions"!
 
 
-def in_spring(month, day):  # between 02/3 and 5/22, inclusive
-    if month >= 2 and day >= 3 and month >= 5 and day <= 22:
-        return True
-    else:
-        return False
+def is_in_spring(month, day):  # between 02/3 and 5/22, inclusive
+
+        if month>=2 and month<=5:
+            if month ==2 and day>=3:
+                return True
+            elif month==3 and day>=1 and day<32:
+                return True
+            elif month ==4 and day>=1 and day<32:
+                return True
+            elif month==5 and day>=1 and day<=22:
+                return True
+        else:
+            return False
 
 
 def main():
@@ -20,10 +28,10 @@ def main():
     day = int(input("Enter day number: "))
 
     # your solution follows...
-    if in_spring(month, day):
-        print("In spring 2020")
+    if is_in_spring(month, day):
+        print(month, "/", day, "is in spring 2020")
     else:
-        print("Not spring 2020")
+        print(month, "/", day, "is not spring 2020")
 
 
 main()
